@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "9681612b-70ed-4ac5-869c-567c7b99957b",
+		"name": "CRUD SPRING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET STUDENT BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/student/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"student",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET STUDENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/students/",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"students",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD STUDENT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"user7\",\n\t\"email\": \"user7@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/add-student",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"add-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE STUDENT BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/delete-student/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"delete-student",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
