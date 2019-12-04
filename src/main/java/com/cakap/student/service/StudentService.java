@@ -25,4 +25,11 @@ public class StudentService {
 	public Student getStudentById(Long id) {
 		return repository.findById(id).get();
 	}
+	
+	public Student createStudent(Student student) {
+		Student newStudent = new Student();
+		newStudent.setName(student.getName());
+		newStudent.setEmail(student.getEmail());
+		return repository.save(newStudent);
+	}
 }
