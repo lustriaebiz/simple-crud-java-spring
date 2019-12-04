@@ -32,4 +32,10 @@ public class StudentService {
 		newStudent.setEmail(student.getEmail());
 		return repository.save(newStudent);
 	}
+	
+	public List<Student> deleteStudent(Long id) {
+		repository.deleteById(id);
+		
+		return repository.findAll();
+	}
 }
