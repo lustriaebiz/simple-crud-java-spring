@@ -95,6 +95,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "UPDATE STUDENT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Ebis\",\n\t\"email\": \"lustria@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/update-student/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"update-student",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}

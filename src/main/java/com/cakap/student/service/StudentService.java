@@ -38,4 +38,12 @@ public class StudentService {
 		
 		return repository.findAll();
 	}
+	
+	public Student updateStudent(Long id, Student student) {
+		Student updateStudent = repository.findById(id).get();
+		
+		updateStudent.setName(student.getName());
+		updateStudent.setEmail(student.getEmail());
+		return repository.save(updateStudent);
+	}
 }
